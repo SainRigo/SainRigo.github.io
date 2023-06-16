@@ -1,14 +1,522 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
- <head>
-  <title> first webpage</title>
- </head>
- <body>
-  <h3> image of life</h3>
- <img src="/home/rigobert/html/images/index.png" alt="">
- <!--hello-->
-  <a href="about.html">about</a>
- <img src="https://thumbs.dreamstime.com/b/happy-woman-jumping-enjoying-life-sunset-mountains-happy-woman-jumping-enjoying-life-field-sunset-mountains-140869977.jpg" width='260' alt="">
-  <a href="https://code.visualstudio.com/Download" target="_blank">visit this link to see more</a>
- </body>
+<head>
+	<script src="https://kit.fontawesome.com/186c6ef47a.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		a {
+				color: #63c5a2;
+				text-decoration: none;
+			}
+			
+
+	body {
+    background-color: white; /* Change to a light gray color */
+    color: #333; /* Change to a darker shade of gray */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+		header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+    z-index:2;
+}
+
+		nav ul {
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav ul li {
+			margin: 0 10px;
+		}
+
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+			transition: color 0.3s ease-in-out;
+		}
+
+		nav ul li a:hover {
+			color: #dcdcdc;
+		}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 150px 30px 50px 50px; /* Updated padding */
+    text-align: justify;
+}
+
+
+
+		.container h1 {
+			font-size: 48px;
+			margin-bottom: 20px;
+		}
+		.profile-container {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  flex-basis: calc(50% - 15px);
+}
+#skills {
+  margin-top: 450px;  
+}
+.ul-edu {
+  margin-left: auto;
+}
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  .project-table th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .project-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .project-table td:nth-child(1) {
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  .project-table td:nth-child(2) {
+    padding-left: 20px;
+  }
+  
+  .project-table td a {
+    display: block;
+    margin-top: 10px;
+  }
+.ul-interests {
+  margin-bottom: 50px;
+}
+..ul-interests {
+  margin-right: 30px;
+}
+.ul-edu .description p.institution {
+  font-size: 14px;
+}
+.about h2,
+.academic-journey h2,
+.container h2 {
+  font-weight: 400;
+}
+.fab {
+  font-size: 30px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; /* Updated margin-top */
+    height: 200px;
+    
+}
+.col-md-5 h3,
+.col-md-7 h3 {
+  font-size: 19px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.latex-logo::before {
+  display: inline-block;
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/200px-LaTeX_logo.svg.png");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.align-right {
+  text-align: center;
+  padding-right: 200px; /* Increase the padding value to move the group further to the right */
+}
+.skill-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.align-left {
+  text-align: center;
+  padding-left: 100px; /* Add padding to the left to create some spacing */
+}
+.skill-column {
+  margin: 0 20px;
+  text-align: center;
+}
+.skill-column {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.skill-column:last-child {
+  margin-right: 0;
+}
+
+.skill-column h3 {
+  margin-bottom: 800px;
+}
+
+.skill-column p {
+  margin: 0;
+}
+#skills {
+  margin-top: 10px !important;
+}
+.ul-interests li,
+.description,
+.description p {
+  font-size: 18px;
+}
+.featurette-icon {
+  font-size: 50px; /* Change the font size to make the icons bigger */
+  color: #8FBF7F; /* Soft green color value */
+}
+.ul-edu li,
+.description p.course,
+.description p.institution {
+  font-size: 18px;
+}
+.profile h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333; /* Change to a clean dark color */
+}
+
+.profile img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%; /* Updated border radius */
+    margin-right: 100px !important;
+    margin-left: -150px;
+    margin-top: -300px !important;
+}
+
+.profile .about {
+    font-size: 24px;
+    margin-bottom: 10px;
+text-align: left;
+    margin-top: 500px !important; /* Updated margin-top */
+    margin-right: 0; /* Remove this property to remove the margin to the right */
+    /* padding-left: 80px; Remove this property to allow the text to extend more to the right */
+}
+.info {
+	margin-top: -200px;
+	text-align: center;
+	margin-right: 100px;
+}
+
+.info p,
+.about p {
+    font-size: 18px; /* Updated font size */
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+#skills {
+  margin-top: 500px;  
+}
+
+#skills h1 {
+  margin-bottom: 40px;  
+}
+
+#skills h3 {
+  margin-bottom: 20px;  
+}
+#cv p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.content-wrapper {
+  margin-left: -300px;
+}
+
+#cv .container {
+  margin-top: 500px; /* Adjust the value as needed */
+}
+#projects .container {
+  padding-left: 100px;
+
+}
+#cv {
+    margin-top: 200px;
+}
+		#cv .btn,
+	#projects .btn {
+			display: inline-block;
+			background-color: #fff;
+		color: #000;
+			font-size: 18px;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			margin-top: 20px;
+			transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+		}
+
+		#cv .btn:hover,
+		#projects .btn:hover {
+			background-color: #000;
+			color: #fff;
+		}
+
+		#projects ul {
+			list-style-type: none;
+		}
+
+		#projects ul li {
+			margin-bottom: 50px;
+		}
+
+		#projects ul li h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+
+		#projects ul li p {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+
+		footer {
+			background-color: #1a1a1a;
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+			margin-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="stars"></div>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#Skills">skills</a></li>
+				<li><a href="#cv">CV</a></li>
+			<li><a href="#projects">Projects</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="home">
+	<div class="container">
+		
+		<div class="profile">
+    <img src="/home/rigobert/html/images/sain2.jpg" alt="Profile Picture">
+    <div class="about me" style="margin-top: 100px;">
+        <h2>About Me</h2> 
+   <p>Hi, i'm Rigo, a Physicist and Data Scientist from Cameroon, with a passion for coding and exploring new ideas. Currently, I'm completing my MSC in physics at the <a href="https://www.ubuea.cm/" target="_blank">University of Buea</a>. Additionally, I'm about to defend my Structured Msc in Mathematical Science, Data Science stream at the <a href="https://www.nexteinstein.org/centers/aims-cameroon/" target="_blank">African Institute of Mathematical Sciences (AIMS)</a>, where I'm researching computer vision and object detection on detecting damaged regions on African Fruit.</p>
+       <p> I believe that my experiences at both institutions have taught me the importance of interdisciplinary thinking and the value of collaboration.</p>
+       <p> In my free time, I'm a big football fan and i enjoy watching matches and videos, playing football video games, and participating in football sports.</p>
+       
+<div class="row">
+  <div class="col-md-6">
+    <!-- Interests section goes here -->
+  </div>
+  <div class="col-md-6">
+    <!-- Education section goes here -->
+  </div>
+</div>
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <h2>Interests</h2>
+        <ul class="ul-interests">
+          
+          <li>Advanced Physics</li>
+          
+          <li>Complex Mathematics</li>
+          
+          <li>Artificial Intelligence</li>
+          
+          <li> Programming</li>
+          
+          <li>Website designing</li>
+          
+          <li>Statistics</li>
+          <li>Computer Vision</li>
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <h2>Education</h2>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Msc in Physics, Oct 2021 - Aug 2023</p>
+              <p class="institution">University of Buea</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Structured Msc in Mathematical Science, Aug 2022 - June 2023</p>
+              <p class="institution">African Institute Of Mathematical Science Cameroon</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Bsc in Physics Degree, Sep 2015 - Jul 2019</p>
+              <p class="institution">University Of Buea</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+        <div class="academic-journey">
+            <h2>Academic Journey</h2>
+            <p> A Journey from Physics to Data Science,
+my academic journey started with a Bachelor's degree in Physics, which gave me the tools to solve complex problems. But my fascination with the idea of machines doing things without being programmed led me to explore Data Science.</p>
+
+<p>Looking to the Future
+In two weeks, I will be defending my Master's thesis in Data Science, which focuses on developing machine learning algorithms to analyze and interpret quantum data. My ultimate career goal is to work for an organization that develops cutting-edge technologies that can make a positive impact on the world. By combining physics and machine learning, I believe we can solve some of the world's most pressing challenges.
+</p>
+        </div>
+    </div>
+</div>
+		</div>
+		<div class="profile-container">
+  <h1>Sain Rigobert Che</h1>
+ <h3><a href="sain.che@aims-cameroon.org">sain.che@aims-cameroon.org</a></h3>
+  <h4>Research Physicists/Data Scientist</h4>
+  <h2><a href="https://www.ubuea.cm/" target="_blank">University of Buea</a></h2>
+  <h2><a href="https://www.nexteinstein.org/centers/aims-cameroon/" target="_blank"> AIMS Cameroon</a></h2>
+<a href="https://linkedin.com/in/YOUR_LINKEDIN_PROFILE" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://twitter.com/YOUR_TWITTER_HANDLE" target="_blank"><i class="fab fa-twitter"></i></a>
+  
+  <a href="https://github.com/YOUR_GITHUB_HANDLE" target="_blank"><i class="fab fa-github"></i></a>
+
+  
+</div>
+		<div id="moon"></div>
+	</div>
+<section  class="content-wrapper" style=" padding-top: 700px;">
+  <div class="container">
+    <h1>Skills</h1>
+  </div>
+  
+</section>
+<section id="Skills" style="background-color: #f2f2f2; padding: 100px 0;">
+<div class="row justify-content-center">
+  <div class="col-4 col-sm-4 align-left">
+    <div class="featurette-icon"><i class="fa fa-code"></i></div>
+    <h3>Programming</h3>
+    <p><strong>Python</strong>, <strong>R</strong>, C, HTML and CSS, <strong>LaTeX</strong></p>
+  </div>
+  <div class="col-4 col-sm-4 align-right">
+    <div class="featurette-icon"><i class="fa fa-laptop"></i></div>
+    <h3>Libraries</h3>
+    <p><strong>Pytorch</strong>, <strong>Keras</strong>, <strong>Tensorflow</strong>, <strong>Scikit-learn</strong>, <strong>Numpy</strong>, <strong>Pandas</strong>, <strong>OpenCv</strong></p>
+  </div>
+  <div class="col-4 col-sm-4 align-right">
+    <div class="featurette-icon"><i class="fa fa-language"></i></div>
+    <h3>Languages</h3>
+    <p><strong>English</strong>, French</p>
+  </div>
+</div>
+</div>
+<section  class="content-wrapper" style=" padding-top: 10px;">
+  <div class="container">
+    <h1>Projects</h1>
+  </div>
+  
+<section id="projects" class="content-wrapper" style="background-color: #f2f2f2;">
+  <div class="container">
+  <div style="margin-left: 250px; padding-top: 20px;">
+    <table class="project-table" >
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2023</td>
+          <td>
+            <h2>Project 1</h2>
+            <p>This website, which is hosted on github.</p>
+          </td>
+          <td>
+            <a href="https://github.com/your-github-username/project1" target="_blank"><i class="fa fa-github" style="font-size:48px;color:black;"></i></a>
+         </td>
+        </tr>
+        <tr>
+          <td>2021</td>
+          <td>
+            <h2>Project 2</h2>
+            <p>This research developed an AI solution to efficiently sort good and damaged African pears using the YOLOv5 algorithm on a dataset of 2900 pear images. The model achieved a mean average precision of 85.1% and has the potential to aid farmers in choosing high-quality produce, reducing waste, increasing efficiency, and improving farm incomes. This illustrates how merging agriculture and technology can help secure livelihoods and sustainability for African communities reliant on vital crops.</p>
+          </td>
+          <td>
+            <a href="https://github.com/SainRigo/Intelligent-Fruit-Inspection-System" target="_blank"><i class="fa fa-github" style="font-size:48px;color:black;"></i></a>
+          </td>
+        </tr>
+        <!-- Add more project rows as needed -->
+      </tbody>
+    </table>
+  </div>
+</section>
+	<footer>
+		<p></p>
+	</footer>
+</body>
 </html>
